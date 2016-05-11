@@ -1,5 +1,5 @@
-angular.module('sitehome').controller('SitehomeController', ['$scope', '$http', '$window','DiceModel',
-	function ($scope, $http, $window, DiceModel) {
+angular.module('sitehome').controller('SitehomeController', ['$scope', 'DiceModel',
+	function ($scope, DiceModel) {
 	
 	var sitehomeController = this;
 	
