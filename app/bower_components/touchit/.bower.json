@@ -1,0 +1,13 @@
+{
+  "name": "touchit",
+  "homepage": "https://github.com/danielglyde/Touchit",
+  "_release": "d20b68e23d",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d20b68e23d4107ceb28286a63a15e940e1b52b8f"
+  },
+  "_source": "git://github.com/danielglyde/Touchit.git",
+  "_target": "*",
+  "_originalSource": "danielglyde/Touchit"
+}

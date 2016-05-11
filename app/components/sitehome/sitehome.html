@@ -1,0 +1,33 @@
+<div class="equalheight" ng-model="dice" style="max-width:1000px;">
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" style="padding-top: 15px;background-color:grey; text-align: center;">
+		<div class="vert">
+		<p class="shnav-logo">soloco!</p>
+		<div class="user-stats-icons" ng-click="rollDice()" ng-show="(choiceMade && remainingRolls > 0) || startGame === true" style="cursor:pointer;">
+			<i class="glyphicon glyphicon-refresh"></i>
+		</div>
+		<div class="user-stats-icons nsfwred" ng-click="resetGame()" ng-show="remainingRolls === 0" style="cursor:pointer;">
+			<i class="glyphicon glyphicon-heart"></i>
+		</div>
+		</div>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" ng-click="dieClicked(dice[1])" ng-class="{'logogreen': dice[1].selected == true, 'pointer': dice[1].selected == false && gameStart === false}" style="background-color:black;">
+		<i class="vert {{dice[1].diceIcon}} shnav-icons"></i>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" style="background-color:yellow; text-align: center;">
+		<span class="user-stats-icons vert">{{scoreTotal}}</span>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" ng-click="dieClicked(dice[4])" ng-class="{'logogreen': dice[4].selected == true, 'pointer': dice[4].selected == false && gameStart === false}" style="background-color:blue;">
+		<i class="vert {{dice[4].diceIcon}} shnav-icons"></i>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" ng-click="dieClicked(dice[0])" ng-class="{'yellow': dice[0].selected == true, 'pointer': dice[0].selected == false && gameStart === false}" style="background-color:green;">
+		<i class="vert {{dice[0].diceIcon}} shnav-icons"></i>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" ng-click="dieClicked(dice[2])" ng-class="{'logogreen': dice[2].selected == true, 'pointer': dice[2].selected == false && gameStart === false}" style="background-color:pink;">
+		<i class="vert {{dice[2].diceIcon}} shnav-icons"></i>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" style="background-color:maroon;">&nbsp;</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" ng-click="dieClicked(dice[3])" ng-class="{'logogreen': dice[3].selected === true, 'pointer': dice[3].selected == false && gameStart === false }" style="background-color:brown;">
+		<i class="vert {{dice[3].diceIcon}} shnav-icons"></i>
+	</div>
+	<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 blocks" style="background-color:red;">&nbsp;</div>
+</div>

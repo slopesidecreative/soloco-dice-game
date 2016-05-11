@@ -1,0 +1,60 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="solocoApp"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" ng-app="solocoApp"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" ng-app="solocoApp"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="solocoApp"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="robots" content="NOFOLLOW">
+    <meta name="description" content="A dice game where the objective is to get the lowest score of 5 dice.">
+    <meta name="author" content="Slopeside - Erik Clineschmidt">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="google" content="notranslate" />
+    <title>soloco - how lo can you go?</title>
+
+	<!-- Build - grabs vendor CSS from block	-->
+    <!-- inject:css 				-->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- foundation-icons.css (only includes dice icons) 		-->
+    <link rel="stylesheet" href="/fonts/foundation-icons/foundation-icons.css" />
+    <!-- endinject -->
+
+    <!-- App CSS 					-->
+    <link href="/app.css" rel="stylesheet" type="text/css" />
+    
+    <!-- Google Fonts (only the required letters)				-->
+    <link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky&text=soloco!' rel='stylesheet' type='text/css'>
+
+    <!-- Icons						-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="favicon.png">
+
+	<body>
+  
+	<div ui-view class="container fill">
+	</div>
+	
+	<!--- JS						 -->
+	
+    <!--[if lt IE 9]>
+    <script src="bower_components/es5-shim/es5-shim.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <![endif]-->
+
+    <!-- inject:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <!-- Application -->
+    <script src="app.js"></script>
+    <script src="components/sitehome/sitehome.js"></script>
+    <script src="components/sitehome/sitehome-controller.js"></script>
+    <script src="components/common/models/dice-model.js"></script>
+    <!-- endinject -->
+    
+	</body>
+</html>
