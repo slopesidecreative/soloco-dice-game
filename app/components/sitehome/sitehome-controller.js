@@ -37,11 +37,12 @@ angular.module('sitehome').controller('SitehomeController', ['$scope', 'DiceMode
 	    // must make selection before rolling, or its the start of the game
 		if($scope.choiceMade === true || $scope.gameStart === true){
 		    $scope.rolling = true;
-			$scope.choiceMade = false;
 			$scope.gameStart = false;
 			$scope.active = true;
 			// for each $scope.dice if selected ! true
-			// get a random number and assign it to it's icon
+			// rollDie() will get a random number, 
+			// convert to class that is the icon
+			// and set the die.diceIcon property to it
 			for(var i=0; i < $scope.diceCount; i++){
 				if($scope.dice[i].selected !== true){
 					//console.log('roll this die: ', $scope.dice[i]);
