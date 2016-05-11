@@ -87,6 +87,5 @@ angular.module('sitehome').controller('SitehomeController', ['$scope', 'DiceMode
 	equalHeight();
 	// get some dice
 	$scope.dice = sitehomeController.getDice($scope.diceCount);
-	$scope.resetDice();
 	
 }]);
