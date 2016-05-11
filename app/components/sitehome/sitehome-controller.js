@@ -89,9 +89,4 @@ angular.module('sitehome').controller('SitehomeController', ['$scope', 'DiceMode
 	$scope.dice = sitehomeController.getDice($scope.diceCount);
 	$scope.resetDice();
 	
-	// roll the dice
-	//$scope.rollDice();
-	// game on
-	//$scope.active = true;
-	
 }]);
